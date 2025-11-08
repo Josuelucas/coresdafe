@@ -16,12 +16,11 @@ export default function HeroSection() {
             <div className="relative">
               <div className="absolute -left-4 top-0 bottom-0 w-8 bg-gradient-to-b from-red-500 via-yellow-400 via-green-400 via-blue-500 to-purple-500 rounded-full"></div>
               <div className="bg-white/10 backdrop-blur-sm p-4 rounded-2xl">
-                <div className="w-[280px] h-[280px] md:w-[400px] md:h-[400px] bg-white/20 rounded-xl flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl md:text-8xl mb-4">📚</div>
-                    <div className="text-sm md:text-base font-bold">LIVRO PARA COLORIR</div>
-                  </div>
-                </div>
+                <img 
+                  src="https://i.ibb.co/SXXf7qDC/CAPA-9.jpg" 
+                  alt="Livro para Colorir Cristão - A Verdadeira Páscoa"
+                  className="w-[280px] h-[280px] md:w-[400px] md:h-[400px] object-cover rounded-xl shadow-lg"
+                />
               </div>
             </div>
           </div>
