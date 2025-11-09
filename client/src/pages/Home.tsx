@@ -18,6 +18,14 @@ export default function Home() {
       <PricingSection />
       <FAQSection />
       <GuaranteeSection />
+      
+      <footer className="bg-muted py-6 border-t" data-testid="footer-copyright">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-sm text-muted-foreground">
+            © 2025 Cores da Fé Oficial. Todos os direitos reservados.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
