@@ -29,7 +29,7 @@
 
 ### 1. Sticky Top Banner
 - Red background (#FF5252)
-- Countdown timer to 08/11/25
+- Countdown timer to 15/11/25
 - "OFERTA LIMITADA" messaging
 - White text, centered
 

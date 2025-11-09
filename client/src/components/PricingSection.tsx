@@ -32,7 +32,7 @@ export default function PricingSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-4">
           <Badge className="bg-destructive text-destructive-foreground mb-4 px-4 py-2">
-            OFERTA LIMITADA - Apenas no dia 08/11/25
+            OFERTA LIMITADA - Apenas no dia 15/11/25
           </Badge>
         </div>
         
