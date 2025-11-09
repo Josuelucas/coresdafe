@@ -5,8 +5,15 @@ import { Check, Gift, Star, Crown } from "lucide-react";
 
 export default function PricingSection() {
   const handleCheckout = (packageName: string) => {
-    console.log(`Checkout iniciado para: ${packageName}`);
-    alert(`Redirecionando para pagamento do ${packageName}`);
+    const urls: Record<string, string> = {
+      'Pacote Básico': 'https://payments.clickmax.io/0qo8izQFz_',
+      'Pacote Premium': 'https://payments.clickmax.io/6OI63gpTqB'
+    };
+    
+    const url = urls[packageName];
+    if (url) {
+      window.location.href = url;
+    }
   };
 
   return (
