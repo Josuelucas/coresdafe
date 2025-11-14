@@ -31,8 +31,8 @@ export default function PricingSection() {
     <section id="pricing-section" className="py-16 md:py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-4">
-          <Badge className="bg-destructive text-destructive-foreground mb-4 px-4 py-2">
-            OFERTA LIMITADA - Apenas no dia 15/11/25
+          <Badge className="bg-destructive text-destructive-foreground mb-4 px-4 py-2 animate-pulse">
+            OFERTA RELÂMPAGO! Válida somente HOJE, 14/11/25
           </Badge>
         </div>
         
@@ -93,9 +93,9 @@ export default function PricingSection() {
             </CardFooter>
           </Card>
           
-          <Card className="relative border-accent border-4" data-testid="card-pricing-premium">
+          <Card className="relative border-accent border-4 shadow-2xl shadow-accent/50 bg-gradient-to-br from-card to-accent/5" data-testid="card-pricing-premium">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-              <Badge className="bg-accent text-accent-foreground px-6 py-2 text-sm font-bold">
+              <Badge className="bg-accent text-accent-foreground px-6 py-2 text-sm font-bold shadow-lg animate-pulse">
                 MAIS VENDIDO
               </Badge>
             </div>
@@ -156,11 +156,11 @@ export default function PricingSection() {
             
             <CardFooter className="flex-col gap-3">
               <Button 
-                className="w-full bg-accent text-accent-foreground hover:bg-accent/90 py-6 text-lg font-bold"
+                className="w-full bg-accent text-accent-foreground hover:bg-accent/90 py-6 text-lg font-bold shadow-lg"
                 onClick={handlePremiumCheckout}
                 data-testid="button-checkout-premium"
               >
-                QUERO O PACOTE PREMIUM
+                SIM! QUERO O PREMIUM E TODOS OS BÔNUS
               </Button>
               <p className="text-xs text-muted-foreground text-center">
                 +500 pessoas já escolheram este pacote
@@ -175,14 +175,14 @@ export default function PricingSection() {
           <DialogHeader>
             <div className="flex items-center justify-center mb-2">
               <Badge className="bg-destructive text-destructive-foreground px-4 py-2 text-sm font-bold animate-pulse">
-                ESPERE! OFERTA ESPECIAL
+                ESPERE! NÃO PERCA A MELHOR OFERTA!
               </Badge>
             </div>
             <DialogTitle className="text-2xl md:text-3xl font-bold text-center">
-              Aproveite o SUPER DESCONTO do Pacote Premium!
+              Por apenas R$ 7,00 a mais, você leva MUITO MAIS!
             </DialogTitle>
             <DialogDescription className="text-center text-base">
-              Por apenas <span className="text-accent font-bold text-xl">R$ 7,00 a mais</span>, você recebe MUITO MAIS valor!
+              Você prefere economizar R$ 7,00 ou perder <span className="text-accent font-bold text-xl">2 novos livros/mês por 6 meses</span> e todos os bônus exclusivos? Esta é a única chance de ouro!
             </DialogDescription>
           </DialogHeader>
 
@@ -251,15 +251,15 @@ export default function PricingSection() {
 
           <DialogFooter className="flex-col sm:flex-col gap-3">
             <Button 
-              className="w-full bg-accent text-accent-foreground py-6 text-lg font-bold"
+              className="w-full bg-accent text-accent-foreground py-6 text-lg font-bold shadow-lg animate-pulse"
               onClick={handlePremiumCheckout}
               data-testid="button-upsell-accept"
             >
-              SIM! QUERO APROVEITAR O DESCONTO
+              SIM! QUERO O PREMIUM E TODOS OS BÔNUS
             </Button>
             <Button 
               variant="outline"
-              className="w-full py-6 text-base"
+              className="w-full py-4 text-sm"
               onClick={handleBasicCheckout}
               data-testid="button-upsell-decline"
             >
