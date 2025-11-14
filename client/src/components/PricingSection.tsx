@@ -156,11 +156,12 @@ export default function PricingSection() {
             
             <CardFooter className="flex-col gap-3">
               <Button 
-                className="w-full bg-accent text-accent-foreground hover:bg-accent/90 py-6 text-lg font-bold shadow-lg"
+                className="w-full bg-accent text-accent-foreground hover:bg-accent/90 py-6 text-sm md:text-lg font-bold shadow-lg"
                 onClick={handlePremiumCheckout}
                 data-testid="button-checkout-premium"
               >
-                SIM! QUERO O PREMIUM E TODOS OS BÔNUS
+                <span className="hidden md:inline">SIM! QUERO O PREMIUM E TODOS OS BÔNUS</span>
+                <span className="md:hidden">QUERO O PREMIUM</span>
               </Button>
               <p className="text-xs text-muted-foreground text-center">
                 +500 pessoas já escolheram este pacote
@@ -251,11 +252,12 @@ export default function PricingSection() {
 
           <DialogFooter className="flex-col sm:flex-col gap-3">
             <Button 
-              className="w-full bg-accent text-accent-foreground py-6 text-lg font-bold shadow-lg animate-pulse"
+              className="w-full bg-accent text-accent-foreground py-6 text-sm md:text-lg font-bold shadow-lg animate-pulse"
               onClick={handlePremiumCheckout}
               data-testid="button-upsell-accept"
             >
-              SIM! QUERO O PREMIUM E TODOS OS BÔNUS
+              <span className="hidden md:inline">SIM! QUERO O PREMIUM E TODOS OS BÔNUS</span>
+              <span className="md:hidden">SIM! QUERO O PREMIUM</span>
             </Button>
             <Button 
               variant="outline"

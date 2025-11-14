@@ -61,11 +61,12 @@ export default function FAQSection() {
         <div className="text-center">
           <Button 
             size="lg" 
-            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-lg px-8 py-6 rounded-lg font-bold"
+            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-sm md:text-lg px-6 md:px-8 py-6 rounded-lg font-bold"
             onClick={scrollToPricing}
             data-testid="button-faq-cta"
           >
-            TIREI MINHAS DÚVIDAS, QUERO COMPRAR
+            <span className="hidden md:inline">TIREI MINHAS DÚVIDAS, QUERO COMPRAR</span>
+            <span className="md:hidden">QUERO COMPRAR</span>
           </Button>
         </div>
       </div>
