@@ -1,0 +1,50 @@
+## TAREFA: Otimização Crítica de Conversão (CRO)
+
+**OBJETIVO PRINCIPAL:** Corrigir a data de validade da oferta para permitir vendas imediatas e otimizar a hierarquia visual do Pacote Premium (R$ 17,00) para aumentar o ticket médio.
+
+---
+
+### 1. Correção da Urgência (CRÍTICO)
+
+A data da oferta está impedindo as vendas. Encontre e modifique o elemento de urgência:
+
+* **Localização:** Banner principal ou seção de destaque (geralmente próximo ao título principal).
+* **Texto Atual (Provável):** "OFERTA LIMITADA - Apenas no dia 15/11/25"
+* **Ajuste 1: Substituição Imediata:** Substitua a data futura pelo texto que força a compra hoje.
+    * **Novo Texto:** "OFERTA RELÂMPAGO! Válida somente HOJE, 14/11/25."
+* **Ajuste 2: Inserção de Urgência (Idealmente JS/HTML):** Se possível, adicione um contador regressivo (Timer de 24 horas, ou até 23:59 de hoje) na seção onde a data estava, para criar escassez visível. Se não for possível adicionar o Timer, use apenas o **Novo Texto** do Ajuste 1.
+
+---
+
+### 2. Otimização da Hierarquia Visual dos Pacotes (CSS/HTML)
+
+O Pacote Premium (R$ 17,00) deve ser visualmente dominante, pois é a principal fonte de lucro.
+
+* **Ajuste 1: Destaque do Pacote Premium:**
+    * Aplique estilos CSS mais agressivos ao *container* do **Pacote Premium** (R$ 17,00).
+    * **Sugestão CSS:** Adicione um `box-shadow` chamativo (ex: uma sombra suave e colorida), um `border` mais espesso e colorido, e um fundo que contraste com o fundo da página (se o fundo for branco, use um fundo azul ou verde claro, por exemplo).
+    * **Tag de Destaque:** Adicione uma tarja visual (usando um `::before` ou um `<span>` com CSS) no canto superior escrito: **"MAIS VENDIDO"** ou **"MELHOR ESCOLHA"**.
+
+* **Ajuste 2: Botões de Ação (CTA):**
+    * **Pacote Premium:** Mude o texto do botão para ser mais impactante.
+        * **Novo Texto do CTA Premium:** "SIM! QUERO O PREMIUM E TODOS OS BÔNUS"
+    * **Pacote Básico:** Mantenha o texto, mas reduza levemente a proeminência do botão (ex: cor menos saturada).
+
+---
+
+### 3. Otimização do Checkout/Pop-up (Lógica e Copy)
+
+* **Confirmação do Funil:** Certifique-se de que o *Pop-up* que aparece ao clicar no Pacote Básico (R$ 10,00) tenha uma copy persuasiva que justifique o valor extra do Pacote Premium.
+* **Ajuste na Copy do Pop-up (Se o código permitir):**
+    * **Título:** "ESPERE! Não Perca a MELHOR OFERTA!"
+    * **Corpo:** "Por apenas R$ 7,00 a mais, você leva **[Nome do Bônus mais valioso]** e garante acesso vitalício aos novos livros. É a única chance de ouro! Você prefere economizar R$ 7,00 ou perder todos os bônus exclusivos?"
+
+---
+
+### 4. Checagem de Confiabilidade (HTML/Estrutura)
+
+* **Garantia e Segurança:** Verifique se o box de **Garantia de 7 dias** e os ícones de **Pagamento Seguro/SSL** estão imediatamente visíveis logo abaixo da tabela de preços. Se não estiverem, mova-os para essa posição para reforçar a confiança antes do cliente clicar.
+
+---
+
+**CONFIRMAÇÃO FINAL:** Após a conclusão dos ajustes, faça um teste de compra para garantir que o funil (Clique Básico -> Pop-up Premium -> Compra) está funcionando perfeitamente e que o Pixel está registrando o evento de "Purchase".
